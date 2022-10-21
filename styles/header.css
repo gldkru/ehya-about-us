@@ -1,0 +1,32 @@
+.header-main {
+	padding: 26px 0;
+}
+
+.header-menu {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.header-menu a {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--black);
+	text-decoration: none;
+}
+
+.header-menu a:hover {
+	color: var(--blue);
+}
+
+.header-menu a:not(:last-child) {
+	margin-right: 40px;
+}
+
+.logo-main {
+	display: flex;
+	height: 100%;
+	align-items: center;
+}

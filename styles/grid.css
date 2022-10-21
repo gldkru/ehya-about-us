@@ -13,8 +13,10 @@
 
 .row > * {
 	flex-shrink: 0;
+	max-width: 100%;
 	padding-left: calc(var(--gutter) / 2);
 	padding-right: calc(var(--gutter) / 2);
+	flex-wrap: wrap;
 }
 
 /* 12 columns */

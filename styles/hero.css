@@ -1,5 +1,5 @@
 .hero {
-	--height: 100vh;
+	--height: 700px;
 	--height-picture: 500px;
 	height: calc(var(--height) + calc(var(--height-picture) / 2));
 	min-height: 700px;
