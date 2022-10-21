@@ -1,0 +1,33 @@
+.information-block {
+	padding: 80px 0;
+}
+
+.information-element {
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.information-element__badge {
+	width: 48px;
+	height: 48px;
+	border-radius: 100%;
+	background: #1565D810;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--blue);
+	margin-bottom: 30px;
+}
+
+.information-element__value {
+	font-family: var(--font-secondary);
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 60px;
+}
+
+.information-element__title {
+	font-size: 18px;
+	line-height: 32px;
+	color: #5A7184;
+}
