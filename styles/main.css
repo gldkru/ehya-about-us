@@ -7,6 +7,8 @@
 @import 'grid.css';
 
 /* Styles */
+@import 'page.css';
 @import 'header.css';
+@import 'footer.css';
 @import 'hero.css';
 @import 'information.css';
