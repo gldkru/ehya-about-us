@@ -56,11 +56,12 @@ a:hover {
 	text-decoration: none;
 }
 
-.btn.btn__primary {
+.btn.btn_primary {
 	color: var(--blue);
 }
 
-.btn.btn__primary:hover {
+.btn.btn_fill.btn_primary,
+.btn.btn_primary:hover {
 	background: var(--blue);
 	border-color: var(--blue);
 	color: #fff;
@@ -69,4 +70,8 @@ a:hover {
 .mx-auto {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.btn.btn_fill.btn_primary:hover {
+	opacity: 0.9;
 }
