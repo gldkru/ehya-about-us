@@ -2,9 +2,12 @@
 	background: var(--blue);
 	color: #fff;
 	padding: 80px 0;
-	text-align: center;
 	font-size: 18px;
 	line-height: 32px;
+}
+
+.cta-main__content {
+	text-align: center;
 }
 
 .cta-main h4 {
@@ -18,12 +21,15 @@
 .cta-form {
 	--icon-width: 40px;
 	width: 430px;
+	margin: 0 auto;
+}
+
+.cta-form__line {
 	display: flex;
 	align-items: center;
 	background: #fff;
 	padding: 5px;
 	height: 58px;
-	margin: 0 auto;
 	border: 1px solid #C3CAD9;
 	border-radius: 8px;
 }
