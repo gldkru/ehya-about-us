@@ -1,16 +1,9 @@
-// const domEl = document.getElementById('cto-input')
-
-// const listener = function (event) {
-// 	console.log(event.target.value)
-// }
-
-// domEl.addEventListener('keyup', listener)
-// domEl.removeEventListener('keyup', listener)
-
 const form = document.getElementById('form')
+const input = document.getElementById('apply')
+const submitBtn = document.getElementById('submit')
 
-const listener = function (event) {
-	event.preventDefault();
+const submitForm = function (event) {
+	event.preventDefault()
 
 	const domEl = document.querySelector('[name="cto-input"]')
 
@@ -18,4 +11,13 @@ const listener = function (event) {
 	console.log(domEl.value)
 }
 
-form.addEventListener('submit', listener)
+const inputListener = function (event) {
+	if (event.target.checked) {
+		submitBtn.removeAttribute('disabled')
+	} else {
+		submitBtn.setAttribute('disabled', 'disabled')
+	}
+}
+
+form.addEventListener('submit', submitForm)
+input.addEventListener('change', inputListener)
