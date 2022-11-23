@@ -3,14 +3,14 @@
 	--user-padding: 10px;
 	display: flex;
 	align-items: center;
-	height: 100px;
+	height: 64px;
+	margin-bottom: 30px;
 }
 
 .header-menu {
-	display: flex;
+	display: none;
 	height: 100%;
 	align-items: center;
-	margin-right: calc(var(--header-margin) - var(--user-padding));
 }
 
 .header-menu__link {
@@ -31,6 +31,10 @@
 	margin-right: calc(var(--header-margin) - var(--user-padding) * 2);
 }
 
+.header-menu .btn {
+	margin-left: var(--user-padding);
+}
+
 .header-main__content {
 	display: flex;
 	align-items: center;
@@ -45,4 +49,24 @@
 	display: flex;
 	height: 100%;
 	align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+	.header-main {
+		margin-bottom: 72px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.header-main {
+		height: 100px;
+	}
+
+	.header-menu {
+		display: flex;
+	}
+
+	.header-main__burger {
+		display: none;
+	}
 }
