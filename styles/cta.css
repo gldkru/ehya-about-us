@@ -70,3 +70,7 @@
 .cta-form__input > input:focus + label {
 	color: var(--blue);
 }
+
+.cta-form__agreement {
+	margin-top: 15px;
+}
