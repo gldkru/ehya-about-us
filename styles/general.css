@@ -148,3 +148,7 @@ a:hover {
 .preload * {
 	transition: none !important;
 }
+
+.scroll-lock {
+	overflow: hidden !important;
+}

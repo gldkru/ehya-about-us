@@ -92,7 +92,7 @@
 	}
 
 	.header-menu {
-		display: flex;
+		display: block;
 		/* display: none; */
 		align-items: flex-start;
 		position: fixed;
@@ -102,9 +102,10 @@
 		background: var(--header-gray);
 		padding-left: 20px;
 		padding-right: 20px;
-		padding-bottom: 40px;
+		padding-bottom: 20px;
 		flex-direction: column;
-		min-height: calc(100vh - 64px);
+		height: calc(100vh - 64px);
+		overflow-y: auto;
 
 		opacity: 0;
 		visibility: hidden;
@@ -140,6 +141,6 @@
 @media screen and (max-width: 575px) {
 	.header-menu__container {
 		margin-left: -15px;
-		margin-rigth: -15px;
+		margin-right: -15px;
 	}
 }

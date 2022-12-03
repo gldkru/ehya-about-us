@@ -38,6 +38,7 @@ if (form) {
 const menu = document.getElementById('menu')
 const headerMenu = document.getElementById('header-menu')
 const headerMenuActiveClass = 'header-menu_opened'
+const scrollLockClass = 'scroll-lock'
 
 document.addEventListener('DOMContentLoaded', function (event) {
 	document.body.classList.remove('preload')
@@ -45,8 +46,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 menu.addEventListener('click', function (event) {
 	if (!headerMenu.classList.contains(headerMenuActiveClass)) {
+		document.body.classList.add(scrollLockClass)
 		headerMenu.classList.add(headerMenuActiveClass)
 	} else {
+		document.body.classList.remove(scrollLockClass)
 		headerMenu.classList.remove(headerMenuActiveClass)
 	}
 })
