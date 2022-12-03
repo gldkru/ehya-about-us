@@ -39,6 +39,10 @@ const menu = document.getElementById('menu')
 const headerMenu = document.getElementById('header-menu')
 const headerMenuActiveClass = 'header-menu_opened'
 
+document.addEventListener('DOMContentLoaded', function (event) {
+	document.body.classList.remove('preload')
+})
+
 menu.addEventListener('click', function (event) {
 	if (!headerMenu.classList.contains(headerMenuActiveClass)) {
 		headerMenu.classList.add(headerMenuActiveClass)

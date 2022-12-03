@@ -144,3 +144,7 @@ a:hover {
 	border: 4px solid var(--blue);
 	box-sizing: border-box;
 }
+
+.preload * {
+	transition: none !important;
+}
