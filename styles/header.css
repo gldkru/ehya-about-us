@@ -1,8 +1,6 @@
 .header-main {
 	--header-margin: 40px;
 	--user-padding: 10px;
-	display: flex;
-	align-items: center;
 	height: 64px;
 	margin-bottom: 30px;
 	position: relative;
@@ -36,7 +34,13 @@
 	justify-content: flex-end;
 }
 
-.header-main_secondary {
+.header-main__container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.header-main__container_secondary {
 	background: var(--header-gray);
 }
 
@@ -72,12 +76,24 @@
 }
 
 @media screen and (max-width: 991px) {
+	/* .page-main {
+		padding-top: calc(64px + 30px);
+	} */
+
+	.header-main__container {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 64px;
+	}
+
 	.header-menu {
 		display: flex;
 		/* display: none; */
 		align-items: flex-start;
-		position: absolute;
-		top: 100%;
+		position: fixed;
+		top: 64px;
 		left: 0;
 		width: 100%;
 		background: var(--header-gray);
